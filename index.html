@@ -14,17 +14,19 @@
         li { margin-bottom: 15px; }
         strong { color: #ffffff; }
         
-        /* The atom-size bypass using transform: scale() */
+        /* Atomic Scale Settings */
         .fine-print { 
             text-align: center; 
-            font-size: 1px; 
-            opacity: 0.05; 
-            color: #444; 
-            margin-top: 40px; 
-            margin-bottom: -30px; 
-            transform: scale(0.05); /* Shrinks it beyond browser limits */
+            font-size: 0.1px; 
+            opacity: 0.01; 
+            color: #0b0b0b; /* Almost identical to your #0a0a0a background */
+            margin: 0;
+            line-height: 0;
+            letter-spacing: -20px; /* Smashes all text into a single microscopic point */
+            transform: scale(0.0001); /* Absolute minimum scale factor */
             transform-origin: center; 
-            user-select: none; /* Makes it harder to highlight */
+            user-select: none; 
+            pointer-events: none; /* Prevents anyone from accidentally clicking or highlighting it */
         }
         
         footer { text-align: center; margin-top: 50px; font-size: 0.8em; color: #555; }
