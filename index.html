@@ -14,19 +14,18 @@
         li { margin-bottom: 15px; }
         strong { color: #ffffff; }
         
-        /* Atomic Scale Settings */
+        /* The Chrome Zoom Trick Box */
         .fine-print { 
             text-align: center; 
-            font-size: 0.1px; 
-            opacity: 0.01; 
-            color: #0b0b0b; /* Almost identical to your #0a0a0a background */
-            margin: 0;
-            line-height: 0;
-            letter-spacing: -20px; /* Smashes all text into a single microscopic point */
-            transform: scale(0.0001); /* Absolute minimum scale factor */
+            font-size: 14px;       /* Becomes readable when zoomed in */
+            color: #2a2a2a;        /* Blends into the dark background */
+            opacity: 0.3;          /* Super faint at 100% zoom */
+            margin-top: 50px; 
+            margin-bottom: -10px;
+            letter-spacing: normal; /* Left normal so the words reveal cleanly */
+            transform: scale(0.14); /* Shrinks it into a tiny speck at 100% zoom */
             transform-origin: center; 
-            user-select: none; 
-            pointer-events: none; /* Prevents anyone from accidentally clicking or highlighting it */
+            display: block;
         }
         
         footer { text-align: center; margin-top: 50px; font-size: 0.8em; color: #555; }
