@@ -15,17 +15,17 @@
         strong { color: #ffffff; }
         
         /* The Chrome Zoom Trick Box */
-        .fine-print { 
+.fine-print { 
             text-align: center; 
-            font-size: 14px;       /* Becomes readable when zoomed in */
-            color: #2a2a2a;        /* Blends into the dark background */
-            opacity: 0.3;          /* Super faint at 100% zoom */
-            margin-top: 50px; 
-            margin-bottom: -10px;
-            letter-spacing: normal; /* Left normal so the words reveal cleanly */
-            transform: scale(0.14); /* Shrinks it into a tiny speck at 100% zoom */
+            font-size: 28px;       /* Large base size so it clears up when you zoom */
+            color: #ffffff;        /* White text so you can actually read it */
+            opacity: 0.12;         /* Dropped super low so it fades into the dark background at 100% */
+            margin-top: 40px; 
+            margin-bottom: 10px;
+            transform: scale(0.07); /* Shrunk down to 7% of its size */
             transform-origin: center; 
             display: block;
+            line-height: 1;
         }
         
         footer { text-align: center; margin-top: 50px; font-size: 0.8em; color: #555; }
